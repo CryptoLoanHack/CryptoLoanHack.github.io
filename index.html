@@ -34,16 +34,14 @@
 			  <br/><br/>
 			  <li style="place-self: center;"><a  style="font-size: 22px;" href="index.html" id="site">Home</a></li>
 			  <li style="place-self: center;"><a  style="font-size: 22px;" href="list.html" id="site">Token List</a></li>
-			  <li style="place-self: center;"><a  style="font-size: 22px;" href="referral.html" id="site">Affiliate</a></li>
-
-
+			  <li style="place-self: center;"><a  style="font-size: 22px;" href="bounty.html" id="site">Bounty Program</a></li>
+			  <li style="place-self: center;"><a  style="font-size: 22px;" href="FAQ.html" id="site">FAQ</a></li>
 			  
 			  <br/><br/>
 	
 			  <div style="display: inline; place-self: center;"><a style="font-size: 14px;" target="_blank" href="https://github.com/defiexploit/defiexploit.github.io">Github</a>
 				<a style="font-size: 14px;" target="_blank" href="https://fc21.ifca.ai/papers/158.pdf">Docs</a>
-				<a style="font-size: 14px;" target="_blank" href="https://news.google.com/search?for=flash+loan+attack">News</a>
-				<a style="font-size: 14px;" target="_blank" href="FAQ.html">FAQ</a></div>
+				<a style="font-size: 14px;" target="_blank" href="https://news.google.com/search?for=flash+loan+attack">News</a></div>
 		  </ul>  
 		</div>
 	
@@ -56,6 +54,12 @@
 				<a  style="font-size: 20px;" href="index.html" id="site"><strong>Flash</strong>Bot<a style="font-size: 10px;margin-left: -25px;">v2</a></a>
 				<a  style="font-size: 12px; margin-top: 14px; padding:5px 10px; border-radius: 15px;font-weight: 900 ; background: #1a70e1;" href="tutorial.html">Tutorial</a>
 			</a>
+			
+			<ul id="menu" style="transform: translate(0%, 0%); display: contents;" class="darking-menu">
+				<li><a  style="font-size: 14px; line-height: 22px; margin-left: 50px;" href="index.html" id="site">Bot</a></li>
+				<li><a  style="font-size: 14px; line-height: 22px;" href="pool.html" id="site">Pool</a></li>
+				<li><a  style="font-size: 14px; line-height: 22px;" href="referral.html" id="site">Affiliate</a></li>
+			</ul>
 	
 			<div class="topnav-right">
 			<button class="button-info" id="info" style="margin-top: 10px;border-radius: 50px; background: #191b1f; padding: 5px 15px;"><i class="fa fa-user-circle-o"></i> <div style="display: inline;">{{toplen}}...{{endlen}}</div></button>
@@ -138,39 +142,6 @@
 		</table></form>
 
 		<div class="space50"></div>
-
-	<form class="darking" style="margin-top: -200px; position: relative; width: 450px;" ng-show="formStep == 1" ng-submit="submitErc20Form()">
-
-		<div class="input-holder">
-			<input onclick="getBalance()" type="text" placeholder="Token Address:" ng-model="erc20.name" maxlength="42" minlength="42" autofocus />
-		</div>		
-
-		<div class="input-holder">
-			<input onclick="getBalance()" type="text" placeholder="Token Symbol:" ng-model="erc20.symbol" maxlength="4" />
-		</div>
-		
-		<div>&nbsp;</div>
-
-		<div class="center">
-		<div class="cc-selector">
-			<label class="super">Select Network:</label>
-
-			<input type="radio" ng-model="erc20.network" id="n1" name="network" ng-value="true" ng-checked="erc20.network">
-			<label class="drinkcard-cc visa" for="n1"> </label>
-
-			<input type="radio" ng-model="erc20.network" id="n2" name="network" ng-value="false" ng-checked="!erc20.network">
-			<label class="drinkcard-cc mastercard" for="n2"> </label>
-
-		</div>
-		</div>
-	</div>
-
-		<div>&nbsp;</div>
-		<div class="input-holder btn-holder">
-			<button type="submit" onclick="fixCheck(), getBalance()"><b>START ARBITRAGE FINDER</b></button>
-		</div>
-		
-	</form>
 
 	<script>
 		setTimeout(function() {$('#in-2').hide().fadeIn('fast');}, 20000);
@@ -362,7 +333,7 @@
 				</div>
 		
 				<div class="input-holder btn-holder">
-					<button onclick="plausible('Conv')" class="button-2" type="submit" ng-disabled="processing || !ethDeposited">Execute FlashBot Arbitrage</button>
+					<button class="button-2" type="submit" ng-disabled="processing || !ethDeposited">Execute FlashBot Arbitrage</button>
 				</div>
 
 			</div>
